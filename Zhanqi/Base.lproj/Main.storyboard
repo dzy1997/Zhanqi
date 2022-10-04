@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestOld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-Ui-btc" userLabel="StartButton">
+                                <rect key="frame" x="166" y="430" width="82" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="开始游戏"/>
+                                <connections>
+                                    <action selector="Start" destination="BYZ-38-t0r" eventType="touchUpInside" id="QmY-aj-pDj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMO-eh-rkk">
+                                <rect key="frame" x="176" y="364" width="62" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="冷主帅"/>
+                                <connections>
+                                    <action selector="PickHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpO-bz-blD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLP-aH-tHw">
+                                <rect key="frame" x="176" y="264" width="62" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="暖主帅"/>
+                                <connections>
+                                    <action selector="PickHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpB-06-jZe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmm-Oc-3SI">
+                                <rect key="frame" x="286.5" y="364" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="边锋"/>
+                                <connections>
+                                    <action selector="PickHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9S-h5-Bhr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asy-nn-2Ua">
+                                <rect key="frame" x="286.5" y="264" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="边锋"/>
+                                <connections>
+                                    <action selector="PickHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBL-zb-uYq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15U-G0-ovP">
+                                <rect key="frame" x="86.5" y="364" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="边锋"/>
+                                <connections>
+                                    <action selector="PickHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtW-0s-yfI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhC-fl-9rp">
+                                <rect key="frame" x="86.5" y="264" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="边锋"/>
+                                <connections>
+                                    <action selector="PickHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R50-SM-izc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9v-hi-ULI">
+                                <rect key="frame" x="194.5" y="320" width="25" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy6-8e-777">
+                                <rect key="frame" x="32" y="530.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="qYl-bZ-b43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将1"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将1">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPy-KQ-dEA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIc-bl-9h7">
+                                <rect key="frame" x="122" y="530.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="XiB-wX-wnw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将2"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将2">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iaj-s2-Grh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUE-zn-K7Q">
+                                <rect key="frame" x="212" y="530.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="H3Z-Op-Zjd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将3"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将3">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRk-kz-HI8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVl-HH-Bgc">
+                                <rect key="frame" x="302" y="530.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="13L-A9-EOG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将4"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将4">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHu-pj-635"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woU-Jt-zsb">
+                                <rect key="frame" x="122" y="576" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="1li-Gk-ej0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将6"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将6">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZP-Kj-Gxp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khj-n4-yhD">
+                                <rect key="frame" x="122" y="621.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="EwZ-TC-o1L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将10"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将10">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hni-cf-Q0V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoh-Rn-Gac">
+                                <rect key="frame" x="122" y="667" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="DBO-sU-koH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将14"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将14">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCH-cI-Upn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICb-VR-6xO">
+                                <rect key="frame" x="212" y="576" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="a1z-SR-9p8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将7"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将7">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h69-y3-dXk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz5-ad-R0X">
+                                <rect key="frame" x="212" y="621.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="2di-GL-Om4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将11"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将11">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kyt-Gu-d8U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vco-0s-jFg">
+                                <rect key="frame" x="212" y="667" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="4dd-VE-Z2S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将15"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将15">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="olg-IM-n5f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKM-4p-fCP">
+                                <rect key="frame" x="302" y="576" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="loY-2J-LRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将8"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将8">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2b-SY-zqp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-Dm-CFt">
+                                <rect key="frame" x="302" y="621.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Coj-c9-u4x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将12"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将12">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Sl-NZ-P0b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUa-Um-oNa">
+                                <rect key="frame" x="32" y="576" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="gXW-O0-nZ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将5"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将5">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grp-Of-rSf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-Nk-qTT">
+                                <rect key="frame" x="32" y="621.5" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="o2i-Vw-V7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将9"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将9">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbH-QE-Fgb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L7-S6-FXh">
+                                <rect key="frame" x="302" y="667" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="cbj-pZ-zAR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将16"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将16">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDz-tu-GKF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmm-zG-WEV">
+                                <rect key="frame" x="32" y="667" width="80" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tpA-yY-lli"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="武将13"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="武将13">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ToggleSelectWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGB-FP-gfM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选将区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmc-tI-R89">
+                                <rect key="frame" x="176.5" y="496" width="61.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgV-iI-O8M">
+                                <rect key="frame" x="246" y="492.5" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="随机重置"/>
+                                <connections>
+                                    <action selector="ResetSelect" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBr-A3-sSs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三国杀战棋模拟器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNf-WS-Jvx">
+                                <rect key="frame" x="85.5" y="178" width="243" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jV4-cp-hym">
+                                <rect key="frame" x="132" y="700" width="150" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="15U-G0-ovP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="0p1-44-0ww"/>
+                            <constraint firstItem="bz5-ad-R0X" firstAttribute="top" secondItem="ICb-VR-6xO" secondAttribute="bottom" constant="10" id="1U7-JR-7id"/>
+                            <constraint firstItem="bz5-ad-R0X" firstAttribute="centerX" secondItem="bUE-zn-K7Q" secondAttribute="centerX" id="3Bs-zB-kNd"/>
+                            <constraint firstItem="Khj-n4-yhD" firstAttribute="centerX" secondItem="kIc-bl-9h7" secondAttribute="centerX" id="4gI-X3-Khz"/>
+                            <constraint firstItem="zhC-fl-9rp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="5XF-jv-Fxa"/>
+                            <constraint firstItem="Khj-n4-yhD" firstAttribute="top" secondItem="woU-Jt-zsb" secondAttribute="bottom" constant="10" id="6y7-D1-qai"/>
+                            <constraint firstItem="vco-0s-jFg" firstAttribute="top" secondItem="bz5-ad-R0X" secondAttribute="bottom" constant="10" id="7gz-T2-t2D"/>
+                            <constraint firstItem="woU-Jt-zsb" firstAttribute="top" secondItem="kIc-bl-9h7" secondAttribute="bottom" constant="10" id="7lG-GO-ZlI"/>
+                            <constraint firstItem="nmm-zG-WEV" firstAttribute="top" secondItem="IUV-Nk-qTT" secondAttribute="bottom" constant="10" id="8Fb-ff-diA"/>
+                            <constraint firstItem="SVl-HH-Bgc" firstAttribute="centerY" secondItem="fy6-8e-777" secondAttribute="centerY" id="8yf-Gw-RzA"/>
+                            <constraint firstItem="IUV-Nk-qTT" firstAttribute="top" secondItem="CUa-Um-oNa" secondAttribute="bottom" constant="10" id="AWq-Sb-TBt"/>
+                            <constraint firstItem="pmc-tI-R89" firstAttribute="top" secondItem="eaF-Ui-btc" secondAttribute="bottom" constant="30" id="B2h-60-RLF"/>
+                            <constraint firstItem="vco-0s-jFg" firstAttribute="centerX" secondItem="bUE-zn-K7Q" secondAttribute="centerX" id="Cod-Pv-S93"/>
+                            <constraint firstItem="pmc-tI-R89" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCu-bX-HTh"/>
+                            <constraint firstItem="hKM-4p-fCP" firstAttribute="centerX" secondItem="SVl-HH-Bgc" secondAttribute="centerX" id="EGn-de-b7U"/>
+                            <constraint firstItem="8L7-S6-FXh" firstAttribute="top" secondItem="eP4-Dm-CFt" secondAttribute="bottom" constant="10" id="FXZ-Ne-FEs"/>
+                            <constraint firstItem="eaF-Ui-btc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GZv-Rm-fOK"/>
+                            <constraint firstItem="Jmm-Oc-3SI" firstAttribute="centerY" secondItem="OMO-eh-rkk" secondAttribute="centerY" id="GbW-fB-jvA"/>
+                            <constraint firstItem="Asy-nn-2Ua" firstAttribute="centerY" secondItem="YLP-aH-tHw" secondAttribute="centerY" id="H6Y-F3-eO9"/>
+                            <constraint firstItem="u9v-hi-ULI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTQ-li-hHM"/>
+                            <constraint firstItem="eP4-Dm-CFt" firstAttribute="top" secondItem="hKM-4p-fCP" secondAttribute="bottom" constant="10" id="Hsv-k0-tNd"/>
+                            <constraint firstItem="OMO-eh-rkk" firstAttribute="top" secondItem="u9v-hi-ULI" secondAttribute="bottom" constant="20" id="Ihf-CM-pll"/>
+                            <constraint firstItem="zgV-iI-O8M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="Izu-Ee-c3R"/>
+                            <constraint firstItem="eP4-Dm-CFt" firstAttribute="centerX" secondItem="SVl-HH-Bgc" secondAttribute="centerX" id="Lls-ZK-oaS"/>
+                            <constraint firstItem="CUa-Um-oNa" firstAttribute="centerX" secondItem="fy6-8e-777" secondAttribute="centerX" id="LuG-Dx-QGO"/>
+                            <constraint firstItem="Yoh-Rn-Gac" firstAttribute="centerX" secondItem="kIc-bl-9h7" secondAttribute="centerX" id="O8r-Dp-JqQ"/>
+                            <constraint firstItem="kIc-bl-9h7" firstAttribute="centerY" secondItem="fy6-8e-777" secondAttribute="centerY" id="OGY-uy-12e"/>
+                            <constraint firstItem="YLP-aH-tHw" firstAttribute="top" secondItem="uNf-WS-Jvx" secondAttribute="bottom" constant="50" id="OhW-gs-aPT"/>
+                            <constraint firstItem="u9v-hi-ULI" firstAttribute="top" secondItem="YLP-aH-tHw" secondAttribute="bottom" constant="20" id="Pt7-7t-cv6"/>
+                            <constraint firstItem="OMO-eh-rkk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q9U-4M-ZBq"/>
+                            <constraint firstItem="IUV-Nk-qTT" firstAttribute="centerX" secondItem="fy6-8e-777" secondAttribute="centerX" id="V4k-U8-mht"/>
+                            <constraint firstItem="zgV-iI-O8M" firstAttribute="centerY" secondItem="pmc-tI-R89" secondAttribute="centerY" id="XdQ-Zm-M60"/>
+                            <constraint firstItem="eaF-Ui-btc" firstAttribute="top" secondItem="OMO-eh-rkk" secondAttribute="bottom" constant="30" id="Zwm-TC-o56"/>
+                            <constraint firstItem="fy6-8e-777" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-135" id="bZK-pR-SF1"/>
+                            <constraint firstItem="YLP-aH-tHw" firstAttribute="centerY" secondItem="zhC-fl-9rp" secondAttribute="centerY" id="bez-K0-eB2"/>
+                            <constraint firstItem="YLP-aH-tHw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cHh-hZ-TGn"/>
+                            <constraint firstItem="nmm-zG-WEV" firstAttribute="centerX" secondItem="fy6-8e-777" secondAttribute="centerX" id="d71-ie-Dr5"/>
+                            <constraint firstItem="woU-Jt-zsb" firstAttribute="centerX" secondItem="kIc-bl-9h7" secondAttribute="centerX" id="fCb-QM-mIZ"/>
+                            <constraint firstItem="SVl-HH-Bgc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="135" id="gX3-yo-7Q5"/>
+                            <constraint firstItem="OMO-eh-rkk" firstAttribute="centerY" secondItem="15U-G0-ovP" secondAttribute="centerY" id="h1C-h4-cKg"/>
+                            <constraint firstItem="kIc-bl-9h7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-45" id="k9A-hH-fRu"/>
+                            <constraint firstItem="Jmm-Oc-3SI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="nGB-Zh-5gY"/>
+                            <constraint firstItem="hKM-4p-fCP" firstAttribute="top" secondItem="SVl-HH-Bgc" secondAttribute="bottom" constant="10" id="pbT-XJ-tu1"/>
+                            <constraint firstItem="bUE-zn-K7Q" firstAttribute="centerY" secondItem="fy6-8e-777" secondAttribute="centerY" id="pfq-j5-3Lo"/>
+                            <constraint firstItem="uNf-WS-Jvx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="plL-nh-GaB"/>
+                            <constraint firstItem="fy6-8e-777" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="qdY-Gi-spd"/>
+                            <constraint firstItem="bUE-zn-K7Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="45" id="s7e-ji-Ut8"/>
+                            <constraint firstItem="Asy-nn-2Ua" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="tBh-It-F4Z"/>
+                            <constraint firstItem="8L7-S6-FXh" firstAttribute="centerX" secondItem="SVl-HH-Bgc" secondAttribute="centerX" id="tBn-sY-7ig"/>
+                            <constraint firstItem="ICb-VR-6xO" firstAttribute="centerX" secondItem="bUE-zn-K7Q" secondAttribute="centerX" id="vcy-H1-Mc9"/>
+                            <constraint firstItem="eaF-Ui-btc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCa-Ka-5sr"/>
+                            <constraint firstItem="CUa-Um-oNa" firstAttribute="top" secondItem="fy6-8e-777" secondAttribute="bottom" constant="10" id="xl0-80-a6Z"/>
+                            <constraint firstItem="Yoh-Rn-Gac" firstAttribute="top" secondItem="Khj-n4-yhD" secondAttribute="bottom" constant="10" id="z6b-TT-JV8"/>
+                            <constraint firstItem="ICb-VR-6xO" firstAttribute="top" secondItem="bUE-zn-K7Q" secondAttribute="bottom" constant="10" id="zmd-cT-rnD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heroPickerView" destination="jV4-cp-hym" id="20Z-PJ-JSL"/>
+                        <outlet property="yesButton" destination="eaF-Ui-btc" id="WVP-jJ-Md8"/>
+                        <outletCollection property="heroButtons" destination="YLP-aH-tHw" collectionClass="NSMutableArray" id="HyF-ii-L0g"/>
+                        <outletCollection property="heroButtons" destination="zhC-fl-9rp" collectionClass="NSMutableArray" id="GkY-Za-ZXQ"/>
+                        <outletCollection property="heroButtons" destination="Asy-nn-2Ua" collectionClass="NSMutableArray" id="02z-ZZ-rfA"/>
+                        <outletCollection property="heroButtons" destination="OMO-eh-rkk" collectionClass="NSMutableArray" id="LVL-82-8sh"/>
+                        <outletCollection property="heroButtons" destination="15U-G0-ovP" collectionClass="NSMutableArray" id="56I-xg-wHu"/>
+                        <outletCollection property="heroButtons" destination="Jmm-Oc-3SI" collectionClass="NSMutableArray" id="DxE-8u-cg9"/>
+                        <outletCollection property="selectHeroButtons" destination="fy6-8e-777" collectionClass="NSMutableArray" id="TN1-zN-ARt"/>
+                        <outletCollection property="selectHeroButtons" destination="kIc-bl-9h7" collectionClass="NSMutableArray" id="2Dg-dF-7jh"/>
+                        <outletCollection property="selectHeroButtons" destination="bUE-zn-K7Q" collectionClass="NSMutableArray" id="7W9-63-adp"/>
+                        <outletCollection property="selectHeroButtons" destination="SVl-HH-Bgc" collectionClass="NSMutableArray" id="UHa-S2-THL"/>
+                        <outletCollection property="selectHeroButtons" destination="CUa-Um-oNa" collectionClass="NSMutableArray" id="AiB-M8-cgE"/>
+                        <outletCollection property="selectHeroButtons" destination="woU-Jt-zsb" collectionClass="NSMutableArray" id="mC9-fC-mfe"/>
+                        <outletCollection property="selectHeroButtons" destination="ICb-VR-6xO" collectionClass="NSMutableArray" id="B5P-u0-IgM"/>
+                        <outletCollection property="selectHeroButtons" destination="hKM-4p-fCP" collectionClass="NSMutableArray" id="3wj-fW-TY5"/>
+                        <outletCollection property="selectHeroButtons" destination="IUV-Nk-qTT" collectionClass="NSMutableArray" id="1E5-qu-sfG"/>
+                        <outletCollection property="selectHeroButtons" destination="Khj-n4-yhD" collectionClass="NSMutableArray" id="5KC-Mf-oAP"/>
+                        <outletCollection property="selectHeroButtons" destination="bz5-ad-R0X" collectionClass="NSMutableArray" id="GkU-mB-eIC"/>
+                        <outletCollection property="selectHeroButtons" destination="eP4-Dm-CFt" collectionClass="NSMutableArray" id="wJk-p5-2bi"/>
+                        <outletCollection property="selectHeroButtons" destination="nmm-zG-WEV" collectionClass="NSMutableArray" id="dA4-xG-t4C"/>
+                        <outletCollection property="selectHeroButtons" destination="Yoh-Rn-Gac" collectionClass="NSMutableArray" id="F0v-qb-qkf"/>
+                        <outletCollection property="selectHeroButtons" destination="vco-0s-jFg" collectionClass="NSMutableArray" id="K5z-cu-4Og"/>
+                        <outletCollection property="selectHeroButtons" destination="8L7-S6-FXh" collectionClass="NSMutableArray" id="FpH-ja-ox7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
